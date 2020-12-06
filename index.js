@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
-const generateMarkdown = require("./generateMarkdown");
+//  const generateMarkdown = require("./generateMarkdown");
 // array of questions for user
 const questions = [
   {
@@ -9,7 +10,7 @@ const questions = [
     message: "What is the title for your markdown file?",
   },
   {
-    type: "editor",
+    type: "input",
     name: "description",
     message: "What is the description of your project?",
   },
@@ -26,7 +27,7 @@ const questions = [
   },
   {
     type: "list",
-    message: " What licenses do you want to use",
+    message: "What licenses do you want to use",
     choices: [
       "MIT License",
       "Mozilla public License 2.0",
@@ -34,34 +35,36 @@ const questions = [
       " GNU General Public License v3.0",
       "None",
     ],
+    name: "license",
   },
   {
     type: "input",
-    name: "Contributing",
+    name: "contributing",
     message: "What are the contribution guidelines?",
   },
   {
-    type: " input",
-    name: "Tests",
+    type: "input",
+    name: "tests",
     message: "What are testing instructions?",
   },
   {
     type: "input",
-    name: "Questions",
-    message: " What is your GitHub username?",
+    name: "questions",
+    message: "What is your GitHub username?",
   },
   {
     type: "input",
-    name: "Additional questions",
+    name: "additionalQuestions",
     message: "What is your email for additional questions?",
   },
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {}
-
-// function to initialize program
-function init() {}
+// function to initialize program and write file
+function init() {
+  inquirer.prompt(questions).then((response) => {
+    fs.writeFileSync("TEST_README.md", generateMarkdown(response));
+  });
+}
 
 // function call to initialize program
 init();

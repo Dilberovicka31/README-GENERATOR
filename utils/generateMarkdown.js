@@ -2,23 +2,47 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Description
+  [![License](https://img.shields.io/badge/License-${data.license})]
 
-  ${data.description}
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
 
-  ## Table of Contents
+## Description
 
-  * [Installation] (#installation)
+${data.description}
 
-  * [Usage] (#usage)
+## Table of Contents
 
-  *[License] (#license)
 
-  *[Contributing] (#contributing)
+## Installation 
 
-  *[Tests (#tests)]
+${data.installation}
 
-  *[Questions] (#questions)
+## Usage
+
+${data.usage}
+
+## License 
+
+${data.license}
+
+## Contributing 
+
+${data.contributing}
+
+## Tests
+
+${data.tests}
+
+## Questions [Questions] 
+
+${data.questions}
+${data.additionalQuestions}
 `;
 }
 
