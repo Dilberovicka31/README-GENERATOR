@@ -1,42 +1,45 @@
-# README GENERATOR
+# j
 
-[![License](https://img.shields.io/badge/License-MIT License)]
+  ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
 
 ## Description
 
-Creating a professional README generator
+j
 
 ## Table of Contents
 
-## Installation
 
-node js inquirer
+
+
+## Installation 
+
+j
 
 ## Usage
 
-Helps with cresting README.md with all teh questions already prefilled.
+j
 
-## License
+## License 
 
-MIT License
+MIT-yellow.svg
 
-## Contributing
+## Contributing 
 
-fork and create pull requests to merge
+j
 
 ## Tests
 
-none
+j
 
-## Questions [Questions]
+## Questions
 
-dilberovicka31
-dilberovicm36@gmail.com
+* GitHub username j
+* Feel free to contact me for additional questions j
