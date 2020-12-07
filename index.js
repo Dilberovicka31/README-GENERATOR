@@ -29,10 +29,10 @@ const questions = [
     type: "list",
     message: "What licenses do you want to use",
     choices: [
-      "MPL%202.0-brightgreen.svg",
-      "MIT-yellow.svg",
-      "Apache%202.0-blue.svg",
       "GPLv3-blue.svg",
+      "MIT-License",
+      "Apache%202.0-blue.svg",
+      "MPL%202.0-brightgreen.svg",
       "None",
     ],
     name: "license",
